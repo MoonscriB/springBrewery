@@ -4,7 +4,7 @@ import microServicesPractice.sFGuru.springBrewery.domain.Beer;
 import microServicesPractice.sFGuru.springBrewery.web.model.BeerDto;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(uses = {DateMapper.class})
 public interface BeerMapper {
 
     BeerDto beerToBeerDto(Beer beer);

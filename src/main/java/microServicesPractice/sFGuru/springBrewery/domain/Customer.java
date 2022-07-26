@@ -4,21 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import microServicesPractice.sFGuru.springBrewery.web.model.BeerDto.BeerStyleEnum;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Null;
-import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 import java.util.UUID;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Beer {
+public class Customer {
 
     private UUID id;
-    private String beerName;
-    private BeerStyleEnum beerStyle;
-    private Long upc;
+    private String customerName;
 }
